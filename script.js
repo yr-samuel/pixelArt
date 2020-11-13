@@ -1,17 +1,28 @@
-$(function(){
-    let color= "";
+let bloco;
 
-    $("#color-pallete").on("click", ".color", function(){
-            color = $(this).css("background-color");
-    });
-
-    $("#pixel-board").on("click", ".pixel", function(){
-            $(this).css("background-color", color);
-    });
-
-    $(".btn-limpar").on("click", function(){
-        $("#pixel-board div").each(function(){
-            $(this).css("background-color", "white");
-        });
+document.querySelectorAll('.container-pallet > div').forEach(block => {
+    block.addEventListener('click', ( ) => {
+        bloco = window.getComputedStyle(block, null).getPropertyValue("background-color");
     });
 });
+
+document.querySelectorAll(".block-paint").forEach(element => {
+    element.addEventListener('click', () =>{
+        element.style.backgroundColor = bloco;
+    });
+});
+
+
+document.querySelectorAll(".block-paint").forEach(element => {
+    element.addEventListener('contextmenu', (e) =>{
+        e.preventDefault();
+        element.style.backgroundColor = 'white';
+    });
+});
+
+document.getElementById('btn-limpar').addEventListener('click', () => {
+    document.querySelectorAll(".block-paint").forEach(element => {
+        element.style.backgroundColor = 'white';
+    });
+});
+

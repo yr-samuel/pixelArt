@@ -1,43 +1,72 @@
-#color-pallete{
-    display:flex;
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    background-color: #e3e3e3;
+    font-family: "Montserrat", sans-serif;
 }
 
-.color {
-    border: 1px solid black;
-    width: 60px;
-    height: 60px;
-    margin-left: 10px;
+.container{
+    width: 25%;
+    height: auto;
+    margin: 60px auto;
+    padding: 20px;
 }
 
-#pixel-board{
-    margin-left: 10px;
-    margin-top: 10px;
-    display:grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-gap: 0px;
-    float: left;
+.container-pallet{
+    display: flex;
+    justify-content: space-around;
 }
 
-.pixel{
-    border: 1px solid black;
-    width: 60px;
-    height: 60px;
+.container-pallet > .block{
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
 }
 
-.black{
+.block.black{
     background-color: black;
 }
-.red{
+
+.block.red{
     background-color: red;
 }
-.blue{
+
+.block.blue{
     background-color: blue;
 }
-.green{
+
+.block.green{
     background-color: green;
 }
 
-.btn-limpar{
-    margin-left: 20px;
+.container > .container-blocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    height: auto;
+    
 }
 
+.container > .container-blocks > .block-paint{
+    border: 1px solid black;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+}
+
+.container > .btn-limpar{
+    width: 310px;
+    height: 30px;
+    border-radius: 5px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
