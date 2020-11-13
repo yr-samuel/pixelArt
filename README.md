@@ -5,7 +5,7 @@
 <ul>
     <li>HTML</li>
     <li>CSS</li>
-    <li>jQuery/JS</li>
+    <li>JS</li>
 </ul>
 
 <h2> Nova Versão do Projeto </h2>
