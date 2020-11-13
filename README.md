@@ -8,8 +8,14 @@
     <li>jQuery/JS</li>
 </ul>
 
+<h2> Nova Versão do Projeto </h2>
+<p> O projeto foi refatorado, totalmente em JS puro e com melhor estilização no CSS </p>
+
+![image](https://user-images.githubusercontent.com/64391583/99085575-2080a500-25a7-11eb-8101-c8aaa297b8cb.png)
+
+
 <h3>
-    Imagens do Projeto
+   Projeto Antigo
 </h3>    
 
 <br>
